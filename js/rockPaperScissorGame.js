@@ -1,5 +1,6 @@
 const showUserChoice = document.getElementById("showUserChoice");
 const showComputerChoice = document.getElementById("showComputerChoice");
+const animationImages = document.getElementById("animationsImages");
 
 const userScore = document.getElementById("userScore");
 const computerScore = document.getElementById("computerScore");
@@ -16,7 +17,6 @@ function game(userChoice){
     else{
         switch(userChoice){
             case "rock":
-
                 computerChoice === "scissors"? win+=1: loss +=1;
                 break
             case "paper":
@@ -29,6 +29,7 @@ function game(userChoice){
     }
     showUserChoice.textContent = userChoice.toUpperCase();
     showComputerChoice.textContent = computerChoice.toUpperCase();
+    animationImages.innerHTML = `<img src="images/Hands png/${userChoice}.png"><img src="images/Hands png/${computerChoice}.png">`;
 
     userScore.textContent = win;
     computerScore.textContent = loss;
