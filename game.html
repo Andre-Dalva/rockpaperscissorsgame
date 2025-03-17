@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="css/game.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="UI">
+        <h1>Rock Paper & Scissors Game</h1>
+        <nav id="navigationMenu">
+            <a href="index.html"><button class="navigationButton">⬅️BACK</button></a>
+            <a href="game.html"><button class="navigationButton">RESET🔄</button></a>
+        </nav>
+        <section id="choiceButtons">
+            <button class="playButton" onclick="game('rock')">✊</button>
+            <button class="playButton" onclick="game('paper')">🖐️</button>
+            <button class="playButton" onclick="game('scissors')">✌️</button>
+        </section>
+        <section id="decision">
+            <h3>YOU PICKED:<br><span class="blinking" id="showUserChoice">None</span></h3>
+            <h3>VS</h3>
+            <h3>COMPUTER:<br><span class="blinking" id="showComputerChoice">None</span></span></h3>
+        </section>
+        <h2>Score:</h2>
+        <section id="scoreTable">
+            <h3>
+                <span id="placeTheName">You:</span><br>
+                <span id="userScore" class="scoreCounter">0</span>
+            </h3>
+            <h3>
+                Computer:<br>
+                <span id="computerScore" class="scoreCounter">0</span>
+            </h3>
+            <h3>
+                Draw:<br>
+                <span id="drawScore" class="scoreCounter">0</span>
+            </h3>
+        </section>
+    </div>
+    
+    <script src="js/rockPaperScissorGame.js"></script>
+</body>
+</html>

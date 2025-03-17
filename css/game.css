@@ -1,0 +1,48 @@
+#navigationMenu{
+    display: flex;
+    justify-content: space-between;
+    margin: 0% 6% 15px 6%;
+}
+
+#navigationMenu a{
+    text-decoration: none;
+    width: fit-content;
+}
+.navigationButton{
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 20%);
+    cursor: pointer;
+}
+#choiceButtons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2em;
+    width: 95%;
+    margin: 2%;
+}
+.playButton{
+    font-size: 3em;
+    padding: 20px 20px;
+    border: 1px solid black;
+    border-radius: 90px;
+    background-color: #fff;
+    cursor: pointer;
+}
+.playButton:hover{
+    background-color: hsl(0, 0%, 90%);
+}
+.playButton:active{
+    opacity: 0.8;
+}
+
+#scoreTable, #decision{
+    display: flex;
+    justify-content: space-between;
+    margin: 0% 6%;
+}
+.scoreCounter{
+    font-size: 1.5em;
+}

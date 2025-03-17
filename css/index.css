@@ -1,0 +1,37 @@
+#nameLabel{
+    font-size: 1.2em;
+}
+#username{
+    color: gray;
+    cursor: text;
+    width: 30%;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 0px 5px 15px;
+}
+#username:hover{
+    box-shadow: 0px 0px 10px hsl(272, 56%, 31%);
+}
+#username:focus{
+    outline: none;
+}
+#startAnchor{
+    text-decoration: none;
+    width: fit-content;
+    margin: auto;
+}
+#startButton{
+    color: #883ec8;
+    margin-top: 3%;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 60px;
+    background-color: white;
+    cursor: pointer;
+}
+#startButton:hover{
+    box-shadow: 0px 0px 10px hsl(272, 56%, 31%);
+}
+#startButton:active{
+    opacity: 0.7;
+}
