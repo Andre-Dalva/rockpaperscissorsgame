@@ -11,34 +11,42 @@
     <div id="UI">
         <h1>Rock Paper & Scissors Game</h1>
         <audio controls src="audio/gameStart.mp3" autoplay hidden></audio>
+
         <nav id="navigationMenu">
             <a href="index.html" target="_self"><button class="navigationButton">⬅️BACK</button></a>
             <a href="game.html" target="_self"><button class="navigationButton">RESET🔄</button></a>
         </nav>
+
         <section id="decision">
             <h3>YOU PICKED:<br><span class="blinking" id="showUserChoice">None</span></h3>
-            <h3>VS</h3>
+            <h3 id="results">VS<br></h3>
             <h3>COMPUTER:<br><span class="blinking" id="showComputerChoice">None</span></span></h3>
         </section>
+
         <div id="animationsImages">
             <img id="gameStart" src="images/human.png">
             <img id="gameStart" src="images/robot.png">
         </div>
+
         <section id="choiceButtons">
             <button class="playButton" onclick="game('rock')">✊</button>
             <button class="playButton" onclick="game('paper')">🖐️</button>
             <button class="playButton" onclick="game('scissors')">✌️</button>
         </section>
+
         <h2>Score:</h2>
+
         <section id="scoreTable">
             <h3>
                 <span id="placeTheName">You:</span><br>
                 <span id="userScore" class="scoreCounter">0</span>
             </h3>
+
             <h3>
                 Computer:<br>
                 <span id="computerScore" class="scoreCounter">0</span>
             </h3>
+
             <h3>
                 Draw:<br>
                 <span id="drawScore" class="scoreCounter">0</span>
