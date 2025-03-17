@@ -25,6 +25,35 @@
 .navigationButton:active{
     opacity: 0.8;
 }
+
+#animationsImages{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    width: 65%;
+    margin: auto;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+#animationsImages img{
+    display: inline;
+    width: 49%;
+}
+#gameStart{
+    animation-name: sizeChange, blink;
+    animation-duration: 1.5s;
+    animation-iteration-count: 2;
+}
+#user{
+    animation-name: userAnimation;
+    animation-duration: 1.5s;
+}
+#computer{
+    animation-name: computerAnimation;
+    animation-duration: 1.5s;
+}
+
 #choiceButtons{
     display: grid;
     grid-template-columns: 15% 15% 15%;
@@ -54,34 +83,6 @@
 }
 .scoreCounter{
     font-size: 1.5em;
-}
-
-#animationsImages{
-    display: flex;
-    justify-content: space-between;
-    background-color: #fff;
-    width: 65%;
-    margin: auto;
-    border-radius: 40px;
-    overflow: hidden;
-}
-
-#animationsImages img{
-    display: inline;
-    width: 49%;
-}
-#gameStart{
-    animation-name: sizeChange, blink;
-    animation-duration: 1.5s;
-    animation-iteration-count: 2;
-}
-#user{
-    animation-name: userAnimation;
-    animation-duration: 1.5s;
-}
-#computer{
-    animation-name: computerAnimation;
-    animation-duration: 1.5s;
 }
 
 @keyframes userAnimation{

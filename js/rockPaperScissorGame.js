@@ -1,10 +1,12 @@
 const showUserChoice = document.getElementById("showUserChoice");
 const showComputerChoice = document.getElementById("showComputerChoice");
 const animationImages = document.getElementById("animationsImages");
+const showResults = document.getElementById("results");
 
 const userScore = document.getElementById("userScore");
 const computerScore = document.getElementById("computerScore");
 const drawScore = document.getElementById("drawScore");
+
 choices = ["rock","paper","scissors"];
 let draw=0, win=0, loss=0;
 
@@ -12,21 +14,35 @@ function game(userChoice){
     userChoice = String(userChoice);
     let computerChoice = String(choices[Math.floor(Math.random()*3)]);
     console.log(computerChoice);
-    if(userChoice === computerChoice)
+    let result = null;
+
+    if(userChoice === computerChoice){
+        showResults.innerHTML = `VS<br><span id="draw" class="grow">ITS A TIE</span>`
         draw +=1;
+    }
     else{
         switch(userChoice){
             case "rock":
-                computerChoice === "scissors"? win+=1: loss +=1;
+                result = computerChoice === "scissors";
                 break
             case "paper":
-                computerChoice === "rock"? win+=1: loss +=1;
+                result = computerChoice === "rock";
                 break
             case "scissors":
-                computerChoice === "paper"? win+=1: loss +=1;
+                result = computerChoice === "paper";
                 break
         }
+        console.log(result);
+        if(result==true){
+            win +=1;
+            showResults.innerHTML = `VS<br><span id="win" class="grow">YOU WIN</span>`;
+        }
+        else{
+            loss +=1;
+            showResults.innerHTML = `VS<br><span id="loss" class="grow">YOU LOST</span>`
+        }
     }
+
     showUserChoice.textContent = userChoice.toUpperCase();
     showComputerChoice.textContent = computerChoice.toUpperCase();
 
