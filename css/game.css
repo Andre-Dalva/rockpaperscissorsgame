@@ -1,10 +1,6 @@
 *{
     box-sizing: border-box;
 }
-#UI{
-    animation-name: appear;
-    animation-duration: 2s;
-}
 #navigationMenu{
     display: flex;
     justify-content: space-between;
@@ -22,6 +18,12 @@
     border-radius: 10px;
     background-color: hsl(0, 0%, 20%);
     cursor: pointer;
+}
+.navigationButton:hover{
+    background-color: hsl(0, 0%, 30%);
+}
+.navigationButton:active{
+    opacity: 0.8;
 }
 #choiceButtons{
     display: grid;
@@ -54,13 +56,6 @@
     font-size: 1.5em;
 }
 
-@keyframes appear{
-    from{
-        transform: translateY(-400px);
-    }
-}
-
-
 #animationsImages{
     display: flex;
     justify-content: space-between;
@@ -73,4 +68,33 @@
 #animationsImages img{
     display: inline;
     width: 49%;
+}
+#gameStart{
+    animation-name: sizeChange, blink;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+#user{
+    animation-name: sizeChange;
+    animation-duration: 1s;
+}
+#computer{
+    animation-name: computerAnimation,sizeChange;
+    animation-duration: 1s;
+}
+
+@keyframes userAnimation{
+    from{
+        transform: translateY(50px);
+    }
+}
+@keyframes computerAnimation{
+    from{
+        transform: translateY(-50px);
+    }
+}
+@keyframes sizeChange {
+    60%{
+        transform: scale(1.3);
+    }
 }
