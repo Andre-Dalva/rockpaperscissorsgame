@@ -63,6 +63,7 @@
     width: 65%;
     margin: auto;
     border-radius: 40px;
+    overflow: hidden;
 }
 
 #animationsImages img{
@@ -72,25 +73,25 @@
 #gameStart{
     animation-name: sizeChange, blink;
     animation-duration: 1.5s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 2;
 }
 #user{
-    animation-name: sizeChange;
-    animation-duration: 1s;
+    animation-name: userAnimation;
+    animation-duration: 1.5s;
 }
 #computer{
-    animation-name: computerAnimation,sizeChange;
-    animation-duration: 1s;
+    animation-name: computerAnimation;
+    animation-duration: 1.5s;
 }
 
 @keyframes userAnimation{
     from{
-        transform: translateY(50px);
+        transform: translateX(-50%);
     }
 }
 @keyframes computerAnimation{
     from{
-        transform: translateY(-50px);
+        transform: translateX(50%);
     }
 }
 @keyframes sizeChange {

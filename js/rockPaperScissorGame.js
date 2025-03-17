@@ -30,7 +30,7 @@ function game(userChoice){
     showUserChoice.textContent = userChoice.toUpperCase();
     showComputerChoice.textContent = computerChoice.toUpperCase();
 
-    animationImages.innerHTML = `<img  id="user" src="images/Hands png/${userChoice}.png"><img id="computer" src="images/Hands png/${computerChoice}.png">`;
+    animationImages.innerHTML = `<img  id="user" src="images/Hands png/user-${userChoice}.png"><img id="computer" src="images/Hands png/computer-${computerChoice}.png">`;
 
     userScore.textContent = win;
     computerScore.textContent = loss;
