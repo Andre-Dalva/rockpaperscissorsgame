@@ -50,11 +50,11 @@
 }
 #user{
     animation-name: userAnimation;
-    animation-duration: 1.5s;
+    animation-duration: 0.5s;
 }
 #computer{
     animation-name: computerAnimation;
-    animation-duration: 1.5s;
+    animation-duration: 0.5s;
 }
 
 #choiceButtons{
@@ -97,10 +97,16 @@
     from{
         transform: translateX(-50%);
     }
+    80%{
+        transform: rotateZ(-45deg);
+    }
 }
 @keyframes computerAnimation{
     from{
         transform: translateX(50%);
+    }
+    80%{
+        transform: rotateZ(45deg);
     }
 }
 @keyframes changeSize{
