@@ -25,10 +25,6 @@
 .navigationButton:active{
     opacity: 0.8;
 }
-.growSize{
-    animation-name: changeSize;
-    animation-duration: 2s;
-}
 #animationsImages{
     display: flex;
     justify-content: space-between;
@@ -91,11 +87,23 @@
 .scoreCounter{
     font-size: 1.5em;
 }
+.resultIndicator{
+    display: block;
+    animation: changeSize 1s infinite;
+}
 #win{
     color: hsl(120, 72%, 50%);
 }
 #loss{
     color: hsl(0, 100%, 56%);
+}
+#draw{
+    color: hsl(51, 100%, 56%);
+}
+.growSize{
+    animation-name: changeSize;
+    animation-duration: 2s;
+    animation-iteration-count: 29090;
 }
 @keyframes userAnimation{
     from{

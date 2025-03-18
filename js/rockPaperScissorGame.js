@@ -17,7 +17,7 @@ function game(userChoice){
     let result = null;
 
     if(userChoice === computerChoice){
-        showResults.innerHTML = `VS<br><span id="draw" class="grow">ITS A TIE</span>`
+        showResults.innerHTML = `VS<br><span id="draw" class="resultIndicator">ITS A TIE</span>`
         draw +=1;
     }
     else{
@@ -35,11 +35,11 @@ function game(userChoice){
         console.log(result);
         if(result==true){
             win +=1;
-            showResults.innerHTML = `VS<br><span id="win" class="grow">YOU WIN</span>`;
+            showResults.innerHTML = `VS<br><span id="win" class="resultIndicator">YOU WIN</span>`;
         }
         else{
             loss +=1;
-            showResults.innerHTML = `VS<br><span id="loss" class="grow">YOU LOST</span>`
+            showResults.innerHTML = `VS<br><span id="loss" class="resultIndicator">YOU LOST</span>`
         }
     }
 
