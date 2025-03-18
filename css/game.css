@@ -4,7 +4,7 @@
 #navigationMenu{
     display: flex;
     justify-content: space-between;
-    margin: 0% 6% 15px 6%;
+    margin: 0% 6% 5px 6%;
 }
 
 #navigationMenu a{
@@ -13,7 +13,7 @@
 }
 .navigationButton{
     color: #fff;
-    padding: 5px 10px;
+    padding: 6px 10px;
     border: none;
     border-radius: 10px;
     background-color: hsl(0, 0%, 20%);
@@ -33,9 +33,10 @@
     display: flex;
     justify-content: space-between;
     background-color: #fff;
-    width: 75%;
-    margin: auto;
-    border-radius: 40px;
+    width: 80%;
+    min-height: 160px;
+    margin: 5px auto;
+    border-radius: 400px;
     overflow: hidden;
 }
 
@@ -79,10 +80,13 @@
     opacity: 0.8;
 }
 
+#scoreTitle{
+    margin-bottom: 0px;
+}
 #scoreTable, #decision{
     display: flex;
     justify-content: space-between;
-    margin: 0% 6%;
+    margin: 0px 6%;
 }
 .scoreCounter{
     font-size: 1.5em;
